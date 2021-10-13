@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import Header from "./Header";
+import React, { useState } from "react";
+import Profile from "./Components/Profile/Profile";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
+  const [showContent, setShowContent] = useState("Profile");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="site-container App">
+        <Header setShowContent={setShowContent} />
       </header>
+      <div className="background-fix profileCard">
+        {showContent === "Profile" && <Profile />}
+        {showContent === "Projects" && <Projects />}
+      </div>
     </div>
   );
 }

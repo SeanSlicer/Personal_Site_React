@@ -1,0 +1,13 @@
+.profileCard {
+width: 50%;
+    margin: auto;
+    margin-top: 25%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(71, 67, 67, 0.466);
+    overflow: hidden;
+    font-family: "Fira Code",monospace;
+    padding-bottom: 2em;
+    
+    
+}
