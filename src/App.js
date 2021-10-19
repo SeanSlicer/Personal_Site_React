@@ -3,8 +3,9 @@ import "./App.css";
 import Header from "./Header";
 import React, { useState } from "react";
 import Profile from "./Components/Profile/Profile";
+import ContactForm from "./Components/ContactForm/ContactForm";
 
-function App() {
+const App = () => {
   return (
     <div>
       <header className="site-container App">
@@ -12,7 +13,9 @@ function App() {
       </header>
       <div className="background-fix profileCard">
         <Profile />
+        <ContactForm />
       </div>
+      
     </div>
   );
 }

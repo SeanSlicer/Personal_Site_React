@@ -23,6 +23,7 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
+    <h3>
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
@@ -38,6 +39,7 @@ const ContactForm = () => {
       </div>
       <button type="submit">{status}</button>
     </form>
+    </h3>
   );
 };
 

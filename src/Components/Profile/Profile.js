@@ -1,4 +1,4 @@
-import "../../App.css";
+import "./Profile.css";
 import React from "react";
 
 export default function Profile() {
@@ -19,46 +19,7 @@ export default function Profile() {
         class. I have a LinkedIn for you to connect with that showcases majority
         my projects and skills.
       </p>
-      <h3>Placeholder text </h3>
-      <p>
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-      </p>
-      <h3>Placeholder text </h3>
-      <p>
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-      </p>
-      <h3>Placeholder text </h3>
-      <p>
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-      </p>
-      <h3>Placeholder text </h3>
-      <p>
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-        Placeholder text Placeholder text Placeholder text Placeholder text
-      </p>
+
     </div>
   );
 }
