@@ -17,22 +17,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <aside>
-        <header>
-          <Image src={portraitPhoto} alt="Portrait of Sean" />
-          <strong>Sean Slicer</strong>
-        </header>
+      <nav>
+        <strong>Sean Slicer</strong>
+        {/* <ul>
+          <li>
+            <a href="/showcase">Projects</a>
+          </li>
+        </ul> */}
+      </nav>
+
+      <main>
         <section>
+          <header>
+            <Image
+              className={styles.portrait}
+              src={portraitPhoto}
+              alt="Portrait of Sean"
+              width={512}
+              height={512}
+            />
+            <h1>Sean Slicer</h1>
+          </header>
           <p>OLATHE, KS</p>
           <p>
             <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
           </p>
-        </section>
-      </aside>
-
-      <main>
-        <section>
-          <h1>Hello!</h1>
           <p>
             I am a full-stack software developer, currently specializing in the
             .NET stack. I&apos;m always learning more and looking to expand my
