@@ -16,18 +16,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <nav>
-        <strong>Sean Slicer</strong>
-        {/* <ul>
-          <li>
-            <a href="/showcase">Projects</a>
-          </li>
-        </ul> */}
-      </nav>
-
       <main>
-        <section>
+        <section id="Aboutme">
           <header>
             <Image
               className={styles.portrait}
@@ -48,7 +38,7 @@ export default function Home() {
             knowledge!
           </p>
         </section>
-        <section>
+        <section id="Experience">
           <h2>Experience</h2>
           <ul>
             <li>
@@ -93,6 +83,28 @@ export default function Home() {
               </p>
             </li>
           </ul>
+        </section>
+
+        <section id="Contact">
+          <h2>Contact Me</h2>
+          <form>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" />
+
+            <label htmlFor="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="I'd like to get in touch about..."
+            />
+
+            <button type="submit">Send</button>
+          </form>
         </section>
       </main>
     </div>
