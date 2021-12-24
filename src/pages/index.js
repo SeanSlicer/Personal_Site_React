@@ -38,7 +38,7 @@ export default function Home() {
             knowledge!
           </p>
         </section>
-        <hr className="xline" />
+        <hr />
         <section id="Experience">
           <h2>Experience</h2>
           <ul>
@@ -85,7 +85,7 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <hr className="xline" />
+        <hr />
         <section id="Contact">
           <h2>Contact Me</h2>
           <form>
