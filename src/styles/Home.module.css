@@ -13,4 +13,6 @@
   border-radius: 50%;
   /** using !important here because `next/image` sucks */
   border: 10px solid rgb(188, 149, 224) !important;
+
 }
+
