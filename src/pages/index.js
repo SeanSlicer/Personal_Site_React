@@ -23,13 +23,13 @@ export default function Home() {
               className={styles.portrait}
               src={portraitPhoto}
               alt="Portrait of Sean"
-              width={512}
-              height={512}
+              width={256}
+              height={256}
             />
-            <h1>Sean Slicer</h1>
           </header>
-          <p>OLATHE, KS</p>
+          <h1>Sean Slicer</h1>
           <p>
+            OLATHE, KS.{" "}
             <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
           </p>
           <p>
@@ -88,7 +88,13 @@ export default function Home() {
         <hr />
         <section id="Contact">
           <h2>Contact Me</h2>
-          <form>
+          <form
+            name="contactform"
+            method="POST"
+            data-netlify="true"
+            action="/index"
+            netlify-honeypot="bot-field"
+          >
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />
 
@@ -103,6 +109,7 @@ export default function Home() {
               rows="10"
               placeholder="I'd like to get in touch about..."
             />
+            <div data-netlify-recaptcha="true"></div>
 
             <button type="submit">Send</button>
           </form>
