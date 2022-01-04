@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import portraitPhoto from "../../public/portrait.jpg";
 import styles from "../styles/Home.module.css";
+import Form from "../components/Navbar/Form";
 
 export default function Home() {
   return (
@@ -88,31 +89,7 @@ export default function Home() {
         <hr />
         <section id="Contact">
           <h2>Contact Me</h2>
-          <form
-            name="contactform"
-            method="POST"
-            data-netlify="true"
-            action="/index"
-            netlify-honeypot="bot-field"
-          >
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
-
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" />
-
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="I'd like to get in touch about..."
-            />
-            <div data-netlify-recaptcha="true"></div>
-
-            <button type="submit">Send</button>
-          </form>
+          <Form />
         </section>
       </main>
     </div>
