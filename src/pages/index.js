@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import portraitPhoto from "../../public/portrait.jpg";
 import styles from "../styles/Home.module.css";
+import Form from "../components/Navbar/Form";
 
 export default function Home() {
   return (
@@ -23,13 +24,13 @@ export default function Home() {
               className={styles.portrait}
               src={portraitPhoto}
               alt="Portrait of Sean"
-              width={512}
-              height={512}
+              width={256}
+              height={256}
             />
-            <h1>Sean Slicer</h1>
           </header>
-          <p>OLATHE, KS</p>
+          <h1>Sean Slicer</h1>
           <p>
+            OLATHE, KS.{" "}
             <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
           </p>
           <p>
@@ -88,24 +89,7 @@ export default function Home() {
         <hr />
         <section id="Contact">
           <h2>Contact Me</h2>
-          <form>
-            <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" />
-
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" />
-
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="I'd like to get in touch about..."
-            />
-
-            <button type="submit">Send</button>
-          </form>
+          <Form />
         </section>
       </main>
     </div>

@@ -1,0 +1,38 @@
+import "../../styles/form.module.css";
+
+export default function Form() {
+  return (
+    <form
+      name="contactform"
+      method="POST"
+      data-netlify="true"
+      action=""
+      netlify-honeypot="bot-field"
+      className="contactForm"
+    >
+      {/* <label htmlFor="name">Name: </label> */}
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+      <br />
+
+      {/* <label htmlFor="email">Email: </label> */}
+      <input type="email" name="email" placeholder="Enter your email" />
+
+      <br />
+
+      {/* <label htmlFor="message">Mssg: </label> */}
+      <textarea
+        name="message"
+        id="message"
+        cols="21"
+        rows="10"
+        placeholder="I'd like to get in touch about..."
+      />
+      <div data-netlify-recaptcha="true"></div>
+
+      <br />
+
+      <button type="submit">Send</button>
+    </form>
+  );
+}
