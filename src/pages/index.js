@@ -20,24 +20,28 @@ export default function Home() {
       <main>
         <section id="Aboutme">
           <header>
-            <Image
-              className={styles.portrait}
-              src={portraitPhoto}
-              alt="Portrait of Sean"
-              width={256}
-              height={256}
-            />
+            <div className={styles.imgdiv}>
+              <Image
+                className={styles.portrait}
+                src={portraitPhoto}
+                alt="Portrait of Sean"
+                width={256}
+                height={256}
+              />
+            </div>
           </header>
-          <h1>Sean Slicer</h1>
-          <p>
-            OLATHE, KS.{" "}
-            <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
-          </p>
-          <p>
-            I am a full-stack software developer, currently specializing in the
-            .NET stack. I&apos;m always learning more and looking to expand my
-            knowledge!
-          </p>
+          <div className={styles.aboutme}>
+            <h1>Sean Slicer</h1>
+            <p>
+              OLATHE, KS.{" "}
+              <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
+            </p>
+            <p>
+              I am a full-stack software developer, currently specializing in
+              the .NET stack. I&apos;m always learning more and looking to
+              expand my knowledge!
+            </p>
+          </div>
         </section>
         <hr />
         <section id="Experience">

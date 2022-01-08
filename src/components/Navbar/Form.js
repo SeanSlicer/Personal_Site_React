@@ -1,4 +1,4 @@
-import "../../styles/form.module.css";
+import styles from "../../styles/form.module.css";
 
 export default function Form() {
   return (
@@ -8,17 +8,13 @@ export default function Form() {
       data-netlify="true"
       action=""
       netlify-honeypot="bot-field"
-      className="contactForm"
+      className={styles.contactForm}
     >
       {/* <label htmlFor="name">Name: </label> */}
       <input type="text" name="name" id="name" placeholder="Enter your name" />
 
-      <br />
-
       {/* <label htmlFor="email">Email: </label> */}
       <input type="email" name="email" placeholder="Enter your email" />
-
-      <br />
 
       {/* <label htmlFor="message">Mssg: </label> */}
       <textarea

@@ -13,5 +13,26 @@
   border-radius: 50%;
   /** using !important here because `next/image` sucks */
   border: 10px solid rgb(188, 149, 224) !important;
+}
 
+.imgdiv {
+  float: left;
+}
+@media (max-width: 450px) {
+  .imgdiv {
+    float: none;
+    padding: 25px;
+  }
+}
+
+.aboutme {
+  padding-top: 7em;
+  padding-left: 18em;
+}
+@media (max-width: 450px) {
+  .aboutme {
+    padding-top: 0em;
+    padding-left: 0em;
+    text-align: center;
+  }
 }
