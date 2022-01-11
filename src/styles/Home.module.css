@@ -21,7 +21,7 @@
 @media (max-width: 450px) {
   .imgdiv {
     float: none;
-    padding: 25px;
+    margin: 15%;
   }
 }
 
