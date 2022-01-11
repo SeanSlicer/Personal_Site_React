@@ -6,9 +6,9 @@ export default function Form() {
     <form
       name="contactform"
       method="POST"
+      action="contact/?success=true"
       data-netlify="true"
-      action="/pages/success"
-      netlify-honeypot="bot-field"
+      data-netlify-honeypot="bot-field"
       className={styles.contactForm}
     >
       {/* <label htmlFor="name">Name: </label> */}
