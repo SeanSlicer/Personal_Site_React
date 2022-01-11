@@ -1,40 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/form.module.css";
 
 export default function Form() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+
   return (
     <form
       name="contactform"
-      // method="POST"
-      // action="contact/?success=true"
-      // data-netlify="true"
-      // data-netlify-honeypot="bot-field"
       className={styles.contactForm}
+      onSubmit={async (e) => {
+        e.preventDefault();
+
+        fetch("/api/hello", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+        })
+          .then(() => {
+            setSuccess(true);
+
+            setName("");
+            setEmail("");
+            setMessage("");
+          })
+          .catch((err) => {
+            console.error("Could not submit form", err);
+            alert(`Couldn't submit form! Error: ${err.message}`);
+          });
+      }}
     >
-      {/* <label htmlFor="name">Name: </label> */}
-      <input type="text" name="name" id="name" placeholder="Enter your name" />
+      {success ? (
+        <div className={styles.success}>
+          Thank you for your message! I will get back to you in 24-48 hours!
+        </div>
+      ) : (
+        <>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
-      {/* <label htmlFor="email">Email: </label> */}
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter your email"
-      />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-      {/* <label htmlFor="message">Mssg: </label> */}
-      <textarea
-        name="message"
-        id="message"
-        cols="21"
-        rows="10"
-        placeholder="I'd like to get in touch about..."
-      />
-      {/* <div data-netlify-recaptcha="true"></div> */}
+          <textarea
+            name="message"
+            id="message"
+            cols="21"
+            rows="10"
+            placeholder="I'd like to get in touch about..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
 
-      <br />
+          <br />
 
-      <button type="submit">Send</button>
+          <button type="submit">Send</button>
+        </>
+      )}
     </form>
   );
 }
