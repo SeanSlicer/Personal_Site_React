@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "../../styles/form.module.css";
 
 export default function Form() {
@@ -6,8 +7,7 @@ export default function Form() {
       name="contactform"
       method="POST"
       data-netlify="true"
-      action=""
-      netlify-honeypot="bot-field"
+      action="contact/?success=true"
       className={styles.contactForm}
     >
       {/* <label htmlFor="name">Name: </label> */}
@@ -24,7 +24,6 @@ export default function Form() {
         rows="10"
         placeholder="I'd like to get in touch about..."
       />
-      <div data-netlify-recaptcha="true"></div>
 
       <br />
 
