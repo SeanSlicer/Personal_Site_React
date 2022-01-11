@@ -49,6 +49,7 @@ export default function Form() {
             name="name"
             id="name"
             placeholder="Enter your name"
+            required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -58,6 +59,7 @@ export default function Form() {
             name="email"
             id="email"
             placeholder="Enter your email"
+            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -68,6 +70,7 @@ export default function Form() {
             cols="21"
             rows="10"
             placeholder="I'd like to get in touch about..."
+            required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
