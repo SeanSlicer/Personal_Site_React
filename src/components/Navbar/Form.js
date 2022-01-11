@@ -8,6 +8,7 @@ export default function Form() {
       method="POST"
       data-netlify="true"
       action="contact/?success=true"
+      netlify-honeypot="bot-field"
       className={styles.contactForm}
     >
       {/* <label htmlFor="name">Name: </label> */}
@@ -24,6 +25,7 @@ export default function Form() {
         rows="10"
         placeholder="I'd like to get in touch about..."
       />
+      <div data-netlify-recaptcha="true"></div>
 
       <br />
 
