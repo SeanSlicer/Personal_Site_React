@@ -7,7 +7,7 @@ export default function Form() {
       name="contactform"
       method="POST"
       data-netlify="true"
-      action="contact/?success=true"
+      action="/pages/success"
       netlify-honeypot="bot-field"
       className={styles.contactForm}
     >
