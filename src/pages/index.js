@@ -47,6 +47,16 @@ export default function Home() {
           <h2>Experience</h2>
           <ul>
             <li>
+              <h3>Chris-Leef</h3>
+              <p>
+                <em>March 2022 &ndash; Present</em>
+              </p>
+              <p>
+                Primary Software developer creating scalable and efficient code
+                for internal and external tools and sites.
+              </p>
+            </li>
+            <li>
               <h3>Full-Stack Web Development Training</h3>
               <p>
                 <strong>Centriq Training</strong>
