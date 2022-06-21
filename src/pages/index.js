@@ -49,7 +49,7 @@ export default function Home() {
             <li>
               <h3>Chris-Leef</h3>
               <p>
-                <em>March 2022 &ndash; Present</em>
+                <em>Feuburary 2022 &ndash; Present</em>
               </p>
               <p>
                 Primary Software developer creating scalable and efficient code
