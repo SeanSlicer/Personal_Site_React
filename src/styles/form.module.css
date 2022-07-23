@@ -22,11 +22,15 @@
   width: 50%;
   margin: auto;
 }
+
 .contactForm textarea {
   height: 100px;
   font-size: 18px;
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
+
 .contactForm button {
   width: 100%;
   border: 2px;
@@ -38,10 +42,12 @@
   font-size: 16px;
   background-color: lightgray;
 }
+
 .contactForm button:hover {
   background-color: rgb(188, 149, 224);
   transition: background 0.2s ease-in-out;
 }
+
 @media (max-width: 600px) {
   .contactForm {
     padding: 10px;
@@ -60,6 +66,7 @@
     font-size: 18px;
     width: 257px;
   }
+
   .contactForm textarea {
     height: 100px;
     max-width: 257px;

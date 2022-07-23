@@ -47,6 +47,16 @@ export default function Home() {
           <h2>Experience</h2>
           <ul>
             <li>
+              <h3>evental.app</h3>
+              <p>
+                <em>June 2022 &ndash; Present</em>
+              </p>
+              <p>
+                Revisiting evental to help aid in the creation of the new
+                evental React Native Application.
+              </p>
+            </li>
+            <li>
               <h3>Chris-Leef</h3>
               <p>
                 <em>February 2022 &ndash; June 2022</em>
@@ -57,44 +67,13 @@ export default function Home() {
               </p>
             </li>
             <li>
-              <h3>Full-Stack Web Development Training</h3>
+              <h3>evental.app</h3>
               <p>
-                <strong>Centriq Training</strong>
+                <em>March 2020 &ndash; February 2022</em>
               </p>
               <p>
-                <em>July 2021 &ndash; October 2021</em>
-              </p>
-              <p>
-                Learned front end, back end laungauges, and frameworks to bring
-                real world applications to life with the use of these
-                technologies.
-              </p>
-            </li>
-            <li>
-              <h3>Pluralsight</h3>
-              <p>
-                <em>January 2021 &ndash; present</em>
-              </p>
-              <p>
-                Pluralsight is an online subscription based learning platform
-                with an extremely large catalog of langauges and frameworks you
-                can choose to learn. I expanded on my knowledge of javascript
-                through the service so far and I plan on learning typescript,
-                python, and nodejs.
-              </p>
-            </li>
-            <li>
-              <h3>Codecademy</h3>
-              <p>
-                <em>July 2019 &ndash; present</em>
-              </p>
-              <p>
-                I used Codecademy because of my interest in coding after seeing
-                my father have software deveolpment as his career and wanting to
-                enter a tech related field. I found the website through online
-                research and I learned how to type, html, css, and minor
-                javascript through the service. I am continuing to brush up on
-                my javascript skills through the service currently.
+                Full-Stack Software Engineer creating a web application for
+                event management using modern tools.
               </p>
             </li>
           </ul>
