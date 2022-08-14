@@ -11,7 +11,8 @@ export default function Home() {
         <title>Sean Slicer</title>
         <meta
           name="description"
-          content="I am an avid full-stack developer, I have knowledge in HTML,CSS, JS, C#, SQL, and more! I'm always learning more and looking to expand my
+          content="I am an efficient engineer with great detailing skills, a hunger for knowledge, and keeping up to date with modern technologies.
+
             knowledge!"
         />
         <link rel="icon" href="/favicon.ico" />
