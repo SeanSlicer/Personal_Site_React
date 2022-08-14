@@ -35,9 +35,8 @@ export default function Home() {
               <a href="mailto:seanslicer@gmail.com">SEANSLICER@GMAIL.COM</a>
             </p>
             <p>
-              I am an avid full-stack developer, I have knowledge in HTML,CSS,
-              JS, C#, SQL, and more! I&apos;m always learning more and looking
-              to expand my knowledge!
+              I am an efficient engineer with great detailing skills, a hunger
+              for knowledge, and keeping up to date with modern technologies.
             </p>
           </div>
         </section>
