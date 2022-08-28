@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import portraitPhoto from "../../public/portrait.jpg";
-import styles from "../styles/Home.module.css";
-import Form from "../components/Navbar/Form";
+
+import Form from "../components/Form";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sean Slicer</title>
         <meta
@@ -17,18 +17,8 @@ export default function Home() {
       </Head>
       <main>
         <section id="Aboutme">
-          <header>
-            <div className={styles.imgdiv}>
-              <Image
-                className={styles.portrait}
-                src={portraitPhoto}
-                alt="Portrait of Sean"
-                width={256}
-                height={256}
-              />
-            </div>
-          </header>
-          <div className={styles.aboutme}>
+          <header></header>
+          <div>
             <h1>Sean Slicer</h1>
             <p>
               OLATHE, KS.{" "}
